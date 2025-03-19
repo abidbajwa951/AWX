@@ -75,7 +75,20 @@ This repository provides a structured approach to deploying a **Rancher RKE2 sin
    ```
    Ensure that all AWX-related pods are running.
 
-4. **Access AWX UI**
+4. **Monitor Logs**
+   - Monitor AWX Pods logs:
+     ```bash
+     kubectl logs -f deployments/awx-operator-controller-manager -c awx-manager -n awx
+     ```
+   - Once the AWX jobs get completed it will print the Ansible job status. 
+     ```bash
+     PLAY RECAP *********************************************************************
+     localhost                  : ok=88   changed=0    unreachable=0    failed=0    skipped=85   rescued=0    ignored=1   
+
+     ```
+
+
+5. **Access AWX UI**
    - Get the AWX service URL:
      ```bash
      kubectl get svc -n awx
