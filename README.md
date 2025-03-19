@@ -94,5 +94,6 @@ This repository provides a structured approach to deploying a **Rancher RKE2 sin
      kubectl get svc -n awx
      ```
    - Open the AWX URL in a browser and log in with the default credentials.
+   - Open `http://<node-ip>:30060` in a browser.
 
 ---
