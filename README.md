@@ -1,3 +1,4 @@
+![AWX Deployment Diagram](images/awx_architecture.png)
 # Rancher RKE2 Single Node Cluster with AWX Installation
 
 This repository provides a structured approach to deploying a **Rancher RKE2 single-node cluster** and then installing **AWX** on top of Rancher. The setup is divided into two main parts:
