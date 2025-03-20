@@ -17,7 +17,7 @@ This repository provides a structured approach to deploying a **Rancher RKE2 sin
 
 1. **Run the RKE2 Installation Script**
 
-   Navigate to the `Rancher/Single_Node_Cluster/` directory and execute the installation script:
+   Navigate to the `Rancher/` directory and execute the installation script:
    
    ```bash
    chmod +x rke2_script.sh
@@ -29,7 +29,7 @@ This repository provides a structured approach to deploying a **Rancher RKE2 sin
    - Start and enable the RKE2 server
    - Configure `kubectl` to use the new cluster
    - Install Helm (for Rancher installation)
-   - Install Rancher Cluster Management (optional)
+   - Install Rancher Cluster Management
 
 2. **Verify the Installation**
 
