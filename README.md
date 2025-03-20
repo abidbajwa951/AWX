@@ -95,5 +95,10 @@ This repository provides a structured approach to deploying a **Rancher RKE2 sin
      ```
    - Open the AWX URL in a browser and log in with the default credentials.
    - Open `http://<node-ip>:30060` in a browser.
+5. **Get AWX Password**
+   - Get AWX Password using the below command.
+   ```bash
+   kubectl get secret awx-admin-password -o jsonpath="{.data.password}" -n awx | base64 --decode ; echo
+   ```
 
 ---
